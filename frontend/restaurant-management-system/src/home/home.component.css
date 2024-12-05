@@ -1,4 +1,273 @@
 #restaurant-pic{
     width: 100%;
-    height: 500px;
+    height: 400px;
 }
+body{
+    background-color: #f0f0f0;
+}
+
+
+
+
+
+
+
+
+/* Container Setup */
+.about-staff {
+    padding: 60px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Header Styling */
+  .about-staff h2 {
+    font-size: 40px;
+    color: #24262b;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  /* Paragraph Styling */
+  .about-staff p {
+    font-size: 18px;
+    color: #777;
+    line-height: 1.8;
+    margin-bottom: 30px;
+  }
+  
+  /* Staff Member Styling */
+  .staff-member {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .staff-member:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Staff Member Image Styling */
+  .staff-member .staff-photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    border: 4px solid #ff740f; /* Accent border */
+  }
+  
+  /* Staff Info Section */
+  .staff-member .staff-info {
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  .staff-member h3 {
+    font-size: 28px;
+    color: #24262b;
+    margin-bottom: 15px;
+  }
+  
+  .staff-member p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .staff-member .social-links a {
+    margin-top: 15px;
+    margin-right: 10px;
+  }
+  
+  .staff-member .social-links a img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .staff-member .social-links a img:hover {
+    background-color: #ff740f; /* Hover color */
+    transform: scale(1.1);
+  }
+  
+  /* Team Photo Styling */
+  .team-photo {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .team-photo img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .staff-member {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .staff-member .staff-photo {
+      margin-bottom: 20px;
+    }
+  
+    .about-staff h2 {
+      font-size: 30px;
+    }
+  
+    .staff-member h3 {
+      font-size: 24px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-staff p {
+      font-size: 16px;
+    }
+  
+    .staff-member .staff-photo {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .staff-member h3 {
+      font-size: 22px;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    background-color: #111318;
+    padding: 70px 0;
+    color: #fff; /* Ensure text is white */
+  }
+  
+  .footer .container {
+    display: flex;
+    justify-content: space-between; /* Distribute columns evenly */
+    align-items: flex-start; /* Align items to the top */
+    flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+  }
+  
+  .footer-col {
+    flex: 1; /* Each column takes up equal space */
+    min-width: 250px; /* Ensure columns don't become too narrow */
+    padding: 0 100px;
+  }
+  
+  .footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  
+  .footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #ff740f;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  
+  .footer-col ul {
+    padding: 0;
+    margin: 0;
+    list-style: none; /* Remove list bullets */
+  }
+  
+  .footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  
+  .footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  
+  .footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+  }
+  
+  .footer-col .social-links a img {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  
+  .footer-col .social-links a:hover {
+    color: #24262b;
+  }
+  
+  /* Additional Responsive Adjustment */
+  @media (max-width: 768px) {
+    .footer .container {
+      flex-direction: column; /* Stack columns vertically on small screens */
+      align-items: center;
+    }
+    .footer-col {
+      width: 100%; /* Make each column take full width */
+      margin-bottom: 30px; /* Add space between columns when stacked */
+    }
+  }
+  
+
+  
+  
+  
+  
+  
+  

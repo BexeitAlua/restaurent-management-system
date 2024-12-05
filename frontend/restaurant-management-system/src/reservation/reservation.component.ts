@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { TopBarComponent } from "../top-bar/top-bar.component";
 
 @Component({
   selector: 'app-reservation',
   standalone: true,
-  imports: [ ReactiveFormsModule, CommonModule],
+  imports: [ReactiveFormsModule, CommonModule, TopBarComponent],
   templateUrl: './reservation.component.html',
   styleUrl: './reservation.component.css'
 })
