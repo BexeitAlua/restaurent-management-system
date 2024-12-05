@@ -1,0 +1,90 @@
+body{
+    background-color: #111318;
+}
+.menu-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+
+  .menu-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .menu-section {
+    margin-bottom: 20px;
+  }
+  
+  .menu-section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #555;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+  }
+
+  .menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eaeaea;
+  }
+  
+  .menu-item:last-child {
+    border-bottom: none;
+  }
+  
+
+  .menu-item-image {
+    width: 200px;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+
+  .menu-item-name {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #444;
+  }
+  
+  .menu-item-price {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #008000;
+  }
+  
+  .menu-item-description {
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 5px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .menu-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .menu-item-image {
+      margin-bottom: 10px;
+    }
+  
+    .menu-item-price {
+      margin-top: 5px;
+    }
+  }
+  
